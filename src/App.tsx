@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ButtonComponent from './components/button';
+import TitleComponent from './components/title/title';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component<any> {
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <TitleComponent title='Painel de controle' section='Início'></TitleComponent>
+          <ButtonComponent label='Entrar'></ButtonComponent>
+        </header>
+      </div>
+    );
+  }
 }
+// const App: React.FC = () => {
+// }
 
 export default App;
