@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ButtonComponent from './components/button';
+import ButtonComponent from './components/button/button';
 import TitleComponent from './components/title/title';
 
 class App extends React.Component<any> {
@@ -16,7 +16,5 @@ class App extends React.Component<any> {
     );
   }
 }
-// const App: React.FC = () => {
-// }
 
 export default App;
