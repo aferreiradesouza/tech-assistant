@@ -5,7 +5,16 @@ import TitleComponent from './components/title/title';
 
 class App extends React.Component<any> {
 
+  async buscar() {
+    const axios = require('axios');
+    axios.get('http://localhost:3000/posts').then(function (response: any) {
+      console.log(response.data);
+    });
+    
+  }
+
   render() {
+    this.buscar()
     return (
       <div className="App">
         <header className="App-header">
